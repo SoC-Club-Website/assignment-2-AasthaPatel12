@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    scroll-behavior: smooth;
+    background: url('./w3.png'), rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.background{
+    height: 100vh;
+    padding-top: 8vh;
+}
+.container1{
+    /* border: 2px solid black; */
+    text-align: center;
+}
+#heading{
+    /* border: 2px solid red; */
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+#ugtext{
+    /* border: 2px solid blue; */
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+#main{
+    /* border: 2px solid yellow; */
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 10px;
+    padding: 20px;
+}
+#text{
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+}
+#glass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(41, 41, 41);
+    color: blue;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 150px;
+    height: 290px;
+    margin: 10px;
+}
+.g-box{
+    /* border: 2px solid slategrey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.min-glass{
+    cursor: pointer;
+    color: blue;
+    background: white;
+    border: 3px solid rgb(106, 106, 250);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 60px;
+    width: 45px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 5px 20px;
+}
+
+@media screen and (max-width: 650px) {
+.min-glass{
+    margin: 5px;
+}
+.background{
+    padding-top: 4vh;
+}
+#glass{
+    width: 100px;
+    height: 190px;
+    margin-left: 10px;
+}
+    #main{
+        flex-direction: column;
+        margin-top: 6vh;
+    }
+    #sg{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
